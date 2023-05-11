@@ -222,3 +222,17 @@ function addList() {
     });
     return sum;
 }
+
+function addList() {
+    // this next line will make the nums a true array from the arguments given
+    let nums = Array.from(arguments);
+    // start the sum at 0
+    let sum = 0;
+    // do a forEach to optimize BigO Notation and say the word function on the same line and feed it a num
+    nums.forEach(function(num) {
+        // take the sum and add the next num
+        sum += num;
+    });
+    // return the whole sum
+    return sum;
+}
