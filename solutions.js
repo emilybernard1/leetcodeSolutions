@@ -160,3 +160,8 @@ function sumNumbers(nums) {
     return nums.reduce((sum, num) => sum += num, 0);
 }
 
+function sumNumbers(nums) {
+    // feed the reduce method the sum and the num, then sum all the nums, letting the sum start out at 0 as a default
+    return nums.reduce((sum, num) => sum += num, 0);
+}
+
