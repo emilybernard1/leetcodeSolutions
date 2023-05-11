@@ -245,3 +245,19 @@ function addList() {
     });
     return sum;
 }
+
+
+// option 3 (where we use rest parameter syntax then reduce)
+
+// name of function, and tell it to spread the nums
+function addList(...nums) {
+    // on one line we tell the program to make an array of all the arguments, then we're going to give it the sum and a num, then that we want it to add that sum to the next num, starting at 0
+    return nums.reduce((sum, num) => sum += num, 0);
+}
+// nums will be an array containing all arguments
+// I find this clunky looking, even though BigO Notation is best with it. 
+// I might not choose it, because it's more difficult to read straight off. 
+
+function addList(...nums) {
+    return nums.reduce((sum, num) => sum += num, 0);
+}
