@@ -165,3 +165,8 @@ function sumNumbers(nums) {
     return nums.reduce((sum, num) => sum += num, 0);
 }
 
+function sumNumbers(nums) {
+    return nums.reduce((sum, num) => sum += num, 0)
+}
+// this final solution has the best BigO Notation because it has the fewest lines of code, taking up the least amount of space/memory/time in the program
+
