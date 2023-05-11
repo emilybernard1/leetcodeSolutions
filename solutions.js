@@ -154,3 +154,9 @@ function sumNumbers(nums) {
 
 // the above solution has better BigO notation than the first solution because we took out the for loop and just said for each num in the nums array, sum it up
 
+// best solution for #3:
+
+function sumNumbers(nums) {
+    return nums.reduce((sum, num) => sum += num, 0);
+}
+
