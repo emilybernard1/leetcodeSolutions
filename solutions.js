@@ -90,3 +90,22 @@ function addOne(num) {
     return num + 1;
 }
 
+
+// #2 Write a function called addTwoNumbers that accepts two numeric arguments and returns the sum of those two numbers. If either argument is not a number, return the value NaN.
+
+// Examples: 
+
+// addTwoNumbers(5, 10)  //=> 15
+// addTwoNumbers(10, -2)  //=> 8
+// addTwoNumbers(0, 0)  //=> 0
+// addTwoNumbers('Hello', 5)  //=> NaN
+
+// instantiate the function by stating the word function, then naming the func with parens, then open curlies, then the logic.
+
+function addTwoNumbers(a, b) {
+    if(typeof a === 'number' && typeof b === 'number') {
+        return a + b;
+    } else {
+        return NaN
+    }
+}
