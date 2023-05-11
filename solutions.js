@@ -211,3 +211,14 @@ function addList() {
     } 
     return sum;
 }
+
+// option 2 (where we make the arguments a true Array then do a forEach to optimize the BigO notation some more)
+
+function addList() {
+    let nums = Array.from(arguments);
+    let sum = 0;
+    nums.forEach(function(num) {
+        sum += num;
+    });
+    return sum;
+}
