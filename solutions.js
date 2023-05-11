@@ -191,3 +191,15 @@ function addList() {
     }
     return sum;
 }
+
+function addList() {
+    // start the sum out at zero
+    let sum = 0;
+    // start the for loop
+    for(let i=0; i < arguments.length; i++) {
+        //  sum up the arguments, gotta have that i
+        sum += arguments[i];
+    }
+    // return the sum
+    return sum;
+}
