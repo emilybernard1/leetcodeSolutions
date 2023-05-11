@@ -170,3 +170,24 @@ function sumNumbers(nums) {
 }
 // this final solution has the best BigO Notation because it has the fewest lines of code, taking up the least amount of space/memory/time in the program
 
+
+
+
+// #4 addList - Write a function called addList that accepts any quantity of numbers as arguments, adds them together, and returns the resulting sum. 
+// - assume all parameters will be numbers.
+// -if called with no arguments, return 0 
+
+// Examples: 
+
+// addList(1)  //=> 1
+// addList(1, 50, 1.23) //=> 52.23
+// addList(7, -12) //=> -5
+
+// option one
+function addList() {
+    let sum = 0;
+    for (let i=0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+}
