@@ -141,3 +141,16 @@ function sumNumbers(nums) {
     }
     return sum;
 }
+
+// better solution for #3: (unless you have to exit the loop early)
+
+function sumNumbers(nums) {
+    let sum = 0;
+    nums.forEach(function(num) {
+        sum += num;
+    });
+    return sum;
+}
+
+// the above solution has better BigO notation than the first solution because we took out the for loop and just said for each num in the nums array, sum it up
+
