@@ -76,3 +76,17 @@ var twoSum = function(nums, target){
 function sayHello() {
     return "Hello!"
 }
+
+// #1 Write a function called addOne that takes a single number as an argument and returns that number plus 1.
+
+// Examples:
+
+// addOne(1)  //=> 2
+// addOne(-5)  //=> -4
+
+// instantiate the function by stating the word "function", then naming it, then parens, then curlies, then logic
+
+function addOne(num) {
+    return num + 1;
+}
+
