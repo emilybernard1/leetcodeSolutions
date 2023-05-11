@@ -65,3 +65,14 @@ var twoSum = function(nums, target){
     }
 };
 
+//  Write a basic function called sayHello that returns the string "Hello!"
+
+// Examples:
+
+// sayHello()  //=> Hello!
+
+// instantiate the function by stating the word function, then the name of the function and parens (), then curlies, then the easy logic!
+
+function sayHello() {
+    return "Hello!"
+}
