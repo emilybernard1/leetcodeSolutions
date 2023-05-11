@@ -109,3 +109,27 @@ function addTwoNumbers(a, b) {
         return NaN
     }
 }
+
+// #3 Write a function called sumNumbers that acccepts a single array of numbers and returns the sum of the numbers in the array.
+// -If the array is empty, return 0 (zero)
+
+// Examples: 
+// sumNumbers([10])  //=> 10
+// sumNumbers([5, 10])  //=> 15
+// sumNumbers([2, 10, -5])  //=> 7
+// sumNumbers([])  //=> 0
+
+// instantiate the function by stating the word "function", then naming it with parents and arguments, then open curlies, then logic.
+
+function sumNumbers(nums) {
+    // start out by globally declaring that the sum is by default, 0
+    let sum = 0;
+    // start a for loop
+    // for every time i is less than the length of the array of nums, do the thing, then increment
+    for (let i=0; i < nums.length; i++) {
+        // here's the thing: sum the nums in the array
+        sum += nums[i];
+    }
+    // then return the sum
+    return sum;
+}
