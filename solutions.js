@@ -236,3 +236,12 @@ function addList() {
     // return the whole sum
     return sum;
 }
+
+function addList() {
+    let nums = Array.from(arguments);
+    let sum = 0;
+    nums.forEach(function(num) {
+        sum += num;
+    });
+    return sum;
+}
